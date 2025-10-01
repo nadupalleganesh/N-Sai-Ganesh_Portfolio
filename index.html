@@ -1,0 +1,920 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nadupalle Sai Ganesh Portfolio</title>
+
+  <!-- Bootstrap 5.3.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- AOS Animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+ 
+  <!-- Bootstrap Icons CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="Portfolio.css">
+
+<a href="Resume/N.Sai_Ganesh_Resume_Gen_AI.pdf" download>Download Resume</a>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">N.Sai Ganesh Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero" class="d-flex align-items-center" 
+         style="height: 100vh; 
+                background: linear-gradient(135deg, #4e54c8, #8f94fb, #36d1dc, #5b86e5); 
+                background-size: 400% 400%; 
+                animation: gradientFlow 12s ease infinite;
+                position: relative; 
+                color: white;">
+  
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold">Hi, I'm <span style="color:#ffcc70;">Nadupalle Sai Ganesh</span></h1>
+    <h2 id="typing"></h2>
+
+    <!-- Buttons inside hero -->
+    <div class="btn-container mt-4">
+      <a href="#contact" class="btn hire-btn btn-lg animate__animated animate__fadeInLeft">🚀 Hire Me</a>
+      <a href="./Resume/N.Sai_Ganesh_Resume_Gen_AI_public.pdf" class="btn resume-btn btn-lg animate__animated animate__fadeInRight" download>📄 Download Resume</a>
+    </div>
+  </div>
+</section>
+
+<!-- Gradient Animation -->
+<style>
+  @keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .btn-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Hire Me Button */
+  .hire-btn {
+    background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  .hire-btn:hover {
+    background: linear-gradient(90deg, #ff512f, #dd2476, #24c6dc, #5433ff);
+    background-size: 400% 400%;
+    animation: gradientMove 4s ease infinite;
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+
+  /* Download Resume Button */
+  .resume-btn {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: all 0.4s ease;
+  }
+
+  .resume-btn:hover {
+    background: linear-gradient(90deg, #36d1dc, #5b86e5, #ff6a00, #ee0979);
+    background-size: 400% 400%;
+    animation: gradientMove 4s ease infinite;
+    color: white;
+    transform: scale(1.08);
+    border: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+
+  /* Gradient Animation for Hover */
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+</style>
+
+
+<!-- About Section -->
+<section id="about" class="about-section py-5" style="background: #f8f9fa;">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">👨‍💻 About Me</h2>
+    <p class="intro-text text-center mb-4">
+      Hi, I'm <strong>Nadupalle Sai Ganesh</strong>, a Python Full Stack Developer skilled in Python , Django, REST APIs, Angular, and Generative AI. 
+      Mechanical Engineering graduate (2022) with a passion for scalable web solutions.
+    </p>
+    <div class="text-center">
+      <a href="javascript:void(0)" class="btn-main discover-btn mb-4" onclick="toggleAboutDetails()">✨ Discover More About Me </a>
+    </div>
+
+    <!-- Hidden Details -->
+    <div id="about-details" class="about-details" style="display:none;">
+      <div class="row">
+        
+        <!-- Academic Background -->
+        <div class="col-md-6 mb-4">
+          <h3 class="mb-3">🎓 Academic Background</h3>
+          <p>
+            B.Tech in Mechanical Engineering (2022) from KG Reddy College, Hyderabad. 
+            Developed strong analytical & problem-solving skills.
+          </p>
+        </div>
+
+        <!-- Skills -->
+        <div class="col-md-6 mb-4">
+          <h3 class="mb-3">💡 Skills</h3>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge custom-badge">Python</span>
+            <span class="badge custom-badge">Django</span>
+            <span class="badge custom-badge">OOPS </span>
+            <span class="badge custom-badge">Data Structures </span>
+            <span class="badge custom-badge">Exception Handling</span>
+            <span class="badge custom-badge">VS Code </span>
+            <span class="badge custom-badge">GitHub Copilot </span>
+            <span class="badge custom-badge">REST APIs</span>
+            <span class="badge custom-badge"> Authentication & Authorization</span>
+            <span class="badge custom-badge">DRF</span>
+            <span class="badge custom-badge">JSON</span>
+            <span class="badge custom-badge">Angular 19</span>
+            <span class="badge custom-badge">JavaScript</span>
+            <span class="badge custom-badge">HTML & CSS</span>
+            <span class="badge custom-badge">Bootstrap</span>
+            <span class="badge custom-badge">MySQL</span>
+            <span class="badge custom-badge">PostgreSQL</span>
+            <span class="badge custom-badge">Redis</span>
+            <span class="badge custom-badge">Celery</span>
+            <span class="badge custom-badge">JWT</span>
+            <span class="badge custom-badge">Git & GitHub</span>
+            <span class="badge custom-badge">Postman</span>
+            <span class="badge custom-badge">Agile/Scrum</span>
+            <span class="badge custom-badge">Generative AI</span>
+            <span class="badge custom-badge">OpenAI API</span>
+            <span class="badge custom-badge">Unit Testing (PyTest)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <h3 class="mb-3">🚀 Projects</h3>
+          <div class="row g-3">
+            
+            <div class="col-md-6">
+              <div class="project-card">
+                <h5>🤖 Gen AI Story Teller Chatbot</h5>
+                <p class="mb-0">Built using Python + OpenAI API with context retention.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="project-card">
+                <h5>🚗 Parking Toll Management System</h5>
+                <p class="mb-0">Python OOP project with PyTest for robust fee calculation logic.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="project-card">
+                <h5>📊 Student Progress Tracking System</h5>
+                <p class="mb-0">Django REST API + Angular 19 with JWT authentication & role-based access.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="project-card">
+                <h5>🏥 Hospital Management System</h5>
+                <p class="mb-0">Full-stack CRUD with Django + MySQL, secure login & admin dashboard.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Custom CSS -->
+<style>
+  /* Skills Badges */
+  .custom-badge {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 20px;
+    margin: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease-in-out;
+  }
+  .custom-badge:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+  }
+
+  /* Project Cards */
+  .project-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  .project-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    background: linear-gradient(135deg, #ffffff, #f0f3ff);
+  }
+</style>
+
+<!-- JS for toggle -->
+<script>
+  function toggleAboutDetails() {
+    const details = document.getElementById("about-details");
+    details.style.display = details.style.display === "none" ? "block" : "none";
+  }
+</script>
+
+
+<!-- Education Section -->
+<section id="education" class="education-section py-5" data-aos="fade-up">
+  <div class="container">
+    <h2>🎓 Education & Training</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>B.Tech in Mechanical Engineering</h3>
+        <p>Graduated: 2022</p>
+        <p>College: KG Reddy College, Hyderabad</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Python Full Stack Development Intern</h3>
+        <p>Duration: Mar 2024 – Sep 2024</p>
+        <p>Organization: Aptsol Global Tech</p>
+        <p>Skills: Python, Django, REST APIs, Angular 19, PostgreSQL, MySQL, Bootstrap, PyTest</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section py-5" data-aos="fade-up">
+  <div class="container">
+    <h2 class="text-center mb-5">💻 Technical Skills</h2>
+    <div class="row g-4">
+      <div class="col-md-4 col-sm-6">
+        <div class="card shadow-sm h-100 text-center p-3">
+          <h3>Python 💻</h3>
+          <div class="progress"><div class="progress-bar bg-success" style="width:95%;">95%</div></div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card shadow-sm h-100 text-center p-3">
+          <h3>Django / DRF 🌐</h3>
+          <div class="progress"><div class="progress-bar bg-primary" style="width:90%;">90%</div></div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card shadow-sm h-100 text-center p-3">
+          <h3>Angular ⚛️</h3>
+          <div class="progress"><div class="progress-bar bg-danger" style="width:85%;">85%</div></div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card shadow-sm h-100 text-center p-3">
+          <h3>MySQL / PostgreSQL 🗄️</h3>
+          <div class="progress"><div class="progress-bar bg-warning" style="width:80%;">80%</div></div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card shadow-sm h-100 text-center p-3">
+          <h3>JavaScript ⚡</h3>
+          <div class="progress"><div class="progress-bar bg-info" style="width:80%;">80%</div></div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card shadow-sm h-100 text-center p-3">
+          <h3>Generative AI 🤖</h3>
+          <div class="progress"><div class="progress-bar bg-dark" style="width:75%;">75%</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section py-5" data-aos="fade-up">
+  <div class="container">
+    <h2>🚀 Projects</h2>
+    <div class="project mb-4">
+      <h3>🤖 Gen AI Story Teller Chatbot</h3>
+      <p>Generative AI-powered chatbot using Python + OpenAI API + Django backend.</p>
+    </div>
+    <div class="project mb-4">
+      <h3>🚗 Parking Toll Management System</h3>
+      <p>Python OOP project with fee logic and PyTest suites.</p>
+      <a href="https://github.com/nadupalleganesh/Parking_Toll_System" class="btn btn-outline-dark btn-sm">GitHub 🔗</a>
+    </div>
+    <div class="project mb-4">
+      <h3>📊 Student Progress Tracking System (SPTS)</h3>
+      <p>Django REST API + Angular 19 for assessments, JWT auth, role-based access.</p>
+      <a href="https://github.com/GaneshSharma9989/SPTS_BACKEND" class="btn btn-outline-dark btn-sm">Backend 🔗</a>
+      <a href="https://github.com/GaneshSharma9989/Teacher-Auth-App" class="btn btn-outline-dark btn-sm">Frontend 🔗</a>
+    </div>
+    <div class="project mb-4">
+      <h3>🏥 Hospital Management System (HMS)</h3>
+      <p>Django + MySQL full-stack CRUD app with secure login & admin dashboard.</p>
+      <a href="https://github.com/GaneshSharma9989/HMSDoctor" class="btn btn-outline-dark btn-sm">GitHub 🔗</a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section py-5" style="background: linear-gradient(135deg, #4e54c8, #8f94fb); color: white;">
+  <div class="container">
+    <h2 class="text-center mb-5">📞 Contact Me</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form id="contactForm" action="https://formspree.io/f/mblzoara" method="POST" class="p-5 bg-white rounded shadow-lg">
+
+          <!-- Full Name -->
+          <div class="form-floating mb-4 input-icon">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
+            <label for="name"><i class="bi bi-person-fill"></i> Full Name</label>
+          </div>
+
+          <!-- Email -->
+          <div class="form-floating mb-4 input-icon">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
+            <label for="email"><i class="bi bi-envelope-fill"></i> Email</label>
+          </div>
+
+          <!-- Phone -->
+          <div class="form-floating mb-4 input-icon">
+            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number" required>
+            <label for="phone"><i class="bi bi-telephone-fill"></i> Phone Number</label>
+          </div>
+
+          <!-- Message -->
+          <div class="form-floating mb-5 input-icon">
+            <textarea class="form-control" id="message" name="message" placeholder="Write your message here..." style="height:150px;" required></textarea>
+            <label for="message"><i class="bi bi-chat-dots-fill"></i> Message</label>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="text-center">
+            <button type="submit" class="btn btn-gradient btn-lg text-white submit-btn">
+              <i class="bi bi-send-fill me-2"></i> Send Message
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Custom CSS -->
+<style>
+  /* Input Icons */
+  .input-icon label i {
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin-right: 8px;
+    color: #4e54c8;
+  }
+
+  .form-control:focus + label i,
+  .form-control:valid + label i {
+    transform: scale(1.3) rotate(-10deg);
+    color: #2575fc;
+  }
+
+  .form-floating > label {
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .form-control:focus + label {
+    color: #4e54c8;
+  }
+
+  /* Submit Button */
+  .submit-btn {
+    background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    border: none;
+    font-size: 1.1rem;
+    padding: 12px 35px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Hover Effect */
+  .submit-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  }
+
+  /* Click animation (blink) */
+  .submit-btn:active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    background: rgba(255,255,255,0.3);
+    animation: blink 0.3s ease;
+  }
+
+  @keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+</style>
+
+<!-- Footer -->
+<footer class="text-center py-3">
+  <p>&copy; 2025 Nadupalle Sai Ganesh. All Rights Reserved.</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="portfolio.js"></script>
+<script>
+  AOS.init();
+
+  // Typing animation
+  var typed = new Typed('#typing', {
+    strings: ["Python Backend Developer 👩‍💻", "Generative AI Enthusiast 🤖", "Django | REST APIs | SQL 💾", "Building Scalable Web Apps 🚀"],
+    typeSpeed: 60, backSpeed: 40, backDelay: 1500, loop: true
+    });
+
+// Toggle About Section
+  function toggleAboutDetails() {
+    const details = document.getElementById('about-details');
+    details.style.display = details.style.display === 'block' ? 'none' : 'block';
+  }
+// Clear contact form after submission
+  function clearForm() {
+    setTimeout(() => {
+      document.getElementById('contactForm').reset();
+    }, 100);
+  }
+
+  // Clear form on page load/back
+  window.onload = function() {
+    if(document.getElementById('contactForm')){
+      document.getElementById('contactForm').reset();
+    }
+  }
+</script>
+<style>
+  /* Buttons container */
+  #hero .btn-container { display: flex; flex-wrap: wrap; gap: 15px; }
+  #hero .btn { border-radius: 50px; padding: 12px 30px; font-size:1.1rem; min-width:160px; text-align:center; transition:0.3s; }
+  #hero .btn:hover { transform: translateY(-3px); }
+  @media (max-width: 375px) {
+    #hero .btn-container { flex-direction: column; align-items:center; gap:10px; width:100%; }
+    #hero .btn { width:80%; font-size:1rem; padding:10px 20px; }
+  }
+  .btn-gradient:hover { background: linear-gradient(90deg, #8f94fb, #4e54c8); }
+</style>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

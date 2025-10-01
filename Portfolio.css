@@ -1,0 +1,558 @@
+/* Custom Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+/* Align the Hero Section content */
+.hero {
+    text-align: center; /* Center all content within the hero section */
+    padding: 100px 20px; /* Add some padding for spacing */
+    background-color: #f5f5f5; /* Optional: background for contrast */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+/* General Styling for Both Buttons */
+.cta {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-flex; /* Changed to inline-flex for better alignment */
+    align-items: center;  /* Vertically centers the content */
+    justify-content: center; /* Horizontally centers the content */
+    margin: 10px 20px; /* Ensures proper spacing between the buttons */
+}
+
+.cta:hover {
+    background-color: #ff4500;
+}
+
+/* Styling for the Download My Resume button */
+.download-btn {
+    background-color: #4CAF50; /* Green background */
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Add spacing from the Hire Me button */
+}
+
+.download-btn:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Ensure the button is centered */
+.hero .cta {
+    display: inline-block;
+}
+
+/* Hover Blink Effect for "Hire Me" button only */
+#hireMeBtn:hover {
+    animation: blink 1s step-start 0s infinite;
+}
+
+/* Blink Animation */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .cta {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* Skills Section Styling */
+#skills {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.skill-bar {
+    position: relative;
+    height: 30px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out; /* Smooth transform for hover effect */
+}
+
+.progress {
+    position: relative;
+    height: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden; /* Prevents the text from overflowing */
+}
+
+.progress-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Color Gradients for Skills */
+.progress:nth-child(1) {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b); /* HTML */
+}
+
+.progress:nth-child(2) {
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* CSS */
+}
+
+.progress:nth-child(3) {
+    background: linear-gradient(45deg, #00b4db, #0083b0); /* JavaScript */
+}
+
+.progress:nth-child(4) {
+    background: linear-gradient(45deg, #28a745, #85e3a7); /* Bootstrap */
+}
+
+.progress:nth-child(5) {
+    background: linear-gradient(45deg, #f39c12, #f1c40f); /* SQL/MySQL */
+}
+
+.progress:nth-child(6) {
+    background: linear-gradient(45deg, #8e44ad, #9b59b6); /* Java */
+}
+
+/* Centering text in the columns */
+.col-md-4 {
+    margin-bottom: 30px;
+}
+
+.col-md-4 h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Hover effect for skill bars */
+.skill-bar:hover .progress {
+    transform: translateY(-5px); /* Moves the progress bar slightly upwards */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow effect */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    #skills h2 {
+        font-size: 2rem;
+    }
+
+    .col-md-4 {
+        margin-bottom: 15px; /* Reduced margin for smaller screens */
+    }
+
+    .col-md-4 h3 {
+        font-size: 1rem;
+    }
+}
+/* -------------------------
+   About Section Styling
+------------------------- */
+.about-section {
+    background: linear-gradient(135deg, #eef9ff, #cde8f5);
+    padding: 70px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    color: #34495e;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+/* Discover More Button */
+.discover-btn {
+    background: #3498db;
+    color: #fff;
+    padding: 14px 28px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.4s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.discover-btn:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+/* About Details */
+.about-details {
+    display: none;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.about-details.show {
+    display: block;
+}
+
+/* Column Spacing */
+.about-details .col-md-6 {
+    margin-bottom: 40px;  /* Adds gap between Academic Background and Skills */
+}
+
+/* Headings */
+.about-details h3 {
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Skills Badge Styling */
+.about-details .badge {
+    padding: 10px 15px;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    margin: 8px;   /* Space between each badge */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Education Section Styling */
+.education-section {
+    background: linear-gradient(135deg, #f0f8ff, #e6f7ff);
+    padding: 60px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    margin-top: 30px;
+}
+
+.education-section h2 {
+    font-size: 2.8rem;
+    color: #222;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.education-item {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.education-item h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #0d6efd;
+    font-weight: 700;
+}
+
+.education-item p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.education-item p strong {
+    color: #333;
+}
+
+.education-item h3::before {
+    content: "⭐ ";
+    color: #f9a825;
+    font-size: 1.5rem;
+}
+
+.education-item h3 {
+    text-transform: capitalize;
+}
+
+@media (max-width: 767px) {
+    .education-section h2 {
+        font-size: 2.2rem;
+    }
+
+    .education-item {
+        padding: 20px;
+    }
+
+    .education-item h3 {
+        font-size: 1.6rem;
+    }
+
+    .education-item p {
+        font-size: 1rem;
+    }
+}
+
+
+/* Projects Section Styling */
+#projects {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Project Card Styling */
+.project {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 600;
+}
+
+.project p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.project a {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+    background-color: #0056b3;
+}
+
+/* Ensuring that Projects section doesn't get crowded */
+@media (max-width: 767px) {
+    #about p {
+        font-size: 1.1rem;
+    }
+
+    #projects h2 {
+        font-size: 2rem;
+    }
+
+    .project {
+        padding: 20px;
+    }
+
+    .project h3 {
+        font-size: 1.5rem;
+    }
+
+    .project p {
+        font-size: 1rem;
+    }
+}
+.project {
+    margin-bottom: 30px;
+}
+
+.btn-main {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-main:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Section Styling */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Form Group for Each Input Field */
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px; /* Limit the maximum width for better alignment */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Form Inputs Styling */
+.form-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Phone Input */
+.phone-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Button Styling */
+.btn-main {
+    background: #3498db;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: 0.4s ease-in-out;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-main:hover {
+    background: #2980b9;
+    transform: scale(1.1);
+}
+
+
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+footer p span {
+    font-size: 1.5rem;
+    margin-left: 5px;
+}
+
+/* Hover Effect on Emoji */
+footer p span:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
