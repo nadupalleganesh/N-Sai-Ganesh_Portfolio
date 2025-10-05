@@ -194,7 +194,7 @@
       
  <!-- Projects Section -->
 <div class="container">
-    <h3 class="mb-4">🚀 Projects</h3>
+    <h3 class="mb-4">🚀 Projects (<span id="project-count"></span>)</h3>
     <div class="row g-3">
 
       <div class="col-md-6">
@@ -321,6 +321,10 @@
     const details = document.getElementById("about-details");
     details.style.display = details.style.display === "none" ? "block" : "none";
   }
+
+const projectCount = document.querySelectorAll('.project-card').length;
+  document.getElementById('project-count').innerText = projectCount;
+  
 </script>
 
 
@@ -628,6 +632,7 @@ Features include: animated bus movement along the selected route • stop marker
 
 </body>
 </html>
+
 
 
 
