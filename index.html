@@ -190,9 +190,11 @@
           </div>
         </div>
       </div>
-<!-- Projects Section -->
+
+      
+ <!-- Projects Section -->
 <div class="container">
-    <h3 class="mb-4">🚀 Projects (<span id="project-count"></span>)</h3>
+    <h3 class="mb-4">🚀 Projects</h3>
     <div class="row g-3">
 
       <div class="col-md-6">
@@ -268,15 +270,36 @@
       <div class="col-md-6">
         <div class="project-card p-3 shadow-sm rounded">
           <h5>🚌 Live Bus Tracking System (Frontend Only)</h5>
-          <p class="mb-2">Interactive bus tracker simulating live journeys between Hyderabad → Vijayawada or Shirdi. Features route selection, animated bus movement, stop markers with tooltips, journey progress bar, live speed simulation, and arrival alerts. Built with HTML, CSS, JavaScript, and Bootstrap. Fully frontend-only and responsive.</p>
+          <p class="mb-2">
+            Interactive bus tracker simulating live journeys between Hyderabad → Vijayawada or Shirdi. Features route selection, animated bus movement, stop markers with tooltips, journey progress bar, live speed simulation, and arrival alerts. Built with HTML, CSS, JavaScript, and Bootstrap. Fully frontend-only and responsive.
+          </p>
         </div>
       </div>
+     </div>
+  </div>
+</section>
 
-    </div>
-</div>
 
 <!-- Custom CSS -->
 <style>
+  /* Skills Badges */
+  .custom-badge {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 20px;
+    margin: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease-in-out;
+  }
+  .custom-badge:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+  }
+
+  /* Project Cards */
   .project-card {
     background: #fff;
     border-radius: 15px;
@@ -292,10 +315,12 @@
   }
 </style>
 
-<!-- JS for Project Count -->
+<!-- JS for toggle -->
 <script>
-  const projectCount = document.querySelectorAll('.project-card').length;
-  document.getElementById('project-count').innerText = projectCount;
+  function toggleAboutDetails() {
+    const details = document.getElementById("about-details");
+    details.style.display = details.style.display === "none" ? "block" : "none";
+  }
 </script>
 
 
@@ -603,6 +628,7 @@ Features include: animated bus movement along the selected route • stop marker
 
 </body>
 </html>
+
 
 
 
