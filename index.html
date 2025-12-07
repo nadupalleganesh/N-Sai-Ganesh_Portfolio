@@ -530,15 +530,19 @@
   AOS.init();
 
   // Typing animation
-  var typed = new Typed('#typing', {
-    strings: ["Python Backend Developer 👩‍💻",
-  "Generative AI Enthusiast 🤖",
-  "Django | REST APIs | SQL 🗄️",
-  "Building Scalable Web Apps 🚀",
-  "NumPy 📊",
-  Pandas Data Wizard 📊"],
-    typeSpeed: 60, backSpeed: 40, backDelay: 1500, loop: true
-    });
+var typed = new Typed('#typing', {
+  strings: [
+    "Python Backend Developer 👩‍💻",
+    "NumPy & Pandas Data Wizard 📊",
+    "Generative AI Enthusiast 🤖",
+    "Django | REST APIs | SQL 🗄️",
+    "Building Scalable Web Apps 🚀"
+  ],
+  typeSpeed: 60,
+  backSpeed: 40,
+  backDelay: 1500,
+  loop: true
+});
 
 // Toggle About Section
   function toggleAboutDetails() {
@@ -573,6 +577,7 @@
 
 </body>
 </html>
+
 
 
 
